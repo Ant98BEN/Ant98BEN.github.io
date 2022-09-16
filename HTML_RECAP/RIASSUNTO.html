@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="IT">
+<head>
+    <meta charset="UTF-8">
+    <title>Riassunto HTML</title>
+</head>
+<body>
+<p>paragrafo</p><br>
+<h1 ID="ESEMPIO1">ESEMPIO 1</h1><br>
+<h2>titolo 1</h2><br>
+<h2>titolo 1</h2><br>
+<h3>titolo 1</h3><br>
+<h4>titolo 1</h4><br>
+<h5>titolo 1</h5>
+<hr>
+<h6>titolo 1</h6>
+<hr>
+<!-- <br> manda a capo, <hr> crea linea per separazione tematica     -->
+
+
+<strong>Quick hummus recipe</strong><br>
+
+
+<b>This recipe makes quick, tasty hummus, with no messing.</b>
+<!-- 2 modi per indicare testo in grassetto, da preferire strong     -->
+<em>Hummus is a delicious thick paste used heavily in Greek and Middle Eastern dishes.</em>
+
+<mark>Ingredients</mark>
+<br>
+
+<code>1 can (400g) of chick peas (garbanzo beans)</code><br>
+<pre>175g            of tahini</pre>
+<br>
+<small>6 sundried tomatoes</small><br>
+<del>Half</del>
+<ins>quarter</ins>
+a red pepper<br>
+A pinch of cayenne pepper and O<sub>2</sub>. do it X<sup>2</sup>time<br>
+<br>
+<cite>Nelson Mandela</cite><br>
+<blockquote>questa è una cazzo di <q>citazione</q></blockquote>
+
+
+<u>Instructions</u><br>
+<!-- TAG SECONDARI: -->
+<big>Quick hummus recipe</big><br>
+<STRIKE>Quick hummus recipe</STRIKE><br>
+<ACRONYM TITLE="WORLD WIDE WEB">WWW</ACRONYM><br>
+&quot<BR>
+&apos<BR>
+&lt<BR>
+
+<P>CARATTERI SPECIALI PER OTTENERE SIMBOLI SU: <A HREF="https://html.spec.whatwg.org/multipage/named-characters.html"
+                                                  TARGET="_BLANK">SITO
+    WEB PER CARATTERI SPECIALI</A></P><BR><BR>
+<!-- <A> PER LINKARE URL< TARGET PER DEFINIRE L'APERTURA:
+_self (default), porta il tab corrente a visualizzare il nuovo contenuto
+- _blank, apre una nuova finestra del browser
+- _parent apre il contenuto nel frame superiore (da usare con i frame)
+- _top apre il contenuto al di sopra qualsiasi frame in cui può essere innestato (da usare con i frame)
+
+PERCORSO ASSOLUTO: SITO ESTERNO AL NOSTRO
+PERCORSO RELATIVO: LINK INTERNO, A UN ALTRA PAGINA O A UN LINK NELLA PAGINA COME ESEMPIO-->
+<A HREF="#ESEMPIO1">LINKxVISUALIZZARE L'ESEMPIO NEL TITOLO</A><BR>
+<a href="https://google.com" target="blank">Google</a><br><!-- ASSOLUTO -->
+<a href="/Index.html" target="_self">click</a>
+<!-- RELATIVO NELLA CARTELLA DI LAVORO, PER CREARE PAGINE SECONDARIE ALLA HOME-->
+<HR>
+<BR>
+
+
+<!--per mandare email-->
+<A HREF="mailto:antonio.bennato@gmail.com">antonio.bennato@gmail.com</A><br>
+<A HREF="mailto:antonio.bennato@gmail.com?subject=email di prova con oggetto&body=prova riempimento corpo">antonio.bennato@gmail.com</A><br>
+<!-- importantissimi il "?" and "&" -->
+
+
+<!-- per generare una chiamata se si naviga da smartphone e tag address per contenere i Contatti! -->
+<address>
+    <p>antonio</p>
+    <a href="tel:+393516327713">326373882</a>
+    <a href="mailto:indirizzo@gmail.com">indirizzoacaso</a></address>
+<br>
+<br> <!-- contenuto di un altra pagina sulla nostra IFRAME Gli attributi da usare con iframe più frequentemente usati sono:
+- src (specifica il contenuto)
+- width (larghezza)
+- height (altezza)
+- loading (eager, caricato subito con il contenuto principale, lazy caricato dopo)
+- scrolling (auto, yes, no)
+-->
+<iframe id="inlineFrameExample"
+        loading="eager"
+        scrolling="no"
+        title="Inline Frame Example"
+        width="300"
+        height="200"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+</iframe>
+</body>
+</html>
