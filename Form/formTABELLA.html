@@ -5,8 +5,9 @@
     <title>Form</title>
 </head>
 <body>
-<table>
-    <form method="post" action="https://postb.in/1663005837582-9485668174456" id="delivery" autocomplete="on"> <!-- crei il Bin sul sito e lo incolli nella parte numerica per vedere cosa riceve il server" -->
+<table border="1">
+    <form method="post" action="https://postb.in/1663005837582-9485668174456" id="delivery" autocomplete="on">
+        <!-- crei il Bin sul sito e lo incolli nella parte numerica per vedere cosa riceve il server" -->
         <tr>
             <th align="left">Campo</th>
             <th align="left">INPUT</th>
@@ -14,86 +15,81 @@
 
         <tr>
             <td>
-                <label for="name">name</label>
-                <input id="name" type="text" name="name" placeholder="nome" required>
+                <label for="name">name</label></td>
+            <td><input id="name" type="text" name="name" placeholder="nome" required>
             </td>
         </tr>
         <tr>
             <td>
-                <label for="lastname">name</label>
-                <input id="lastname" type="text" name="lastname" placeholder="cognome" required>
+                <label for="lastname">name</label></td>
+            <td><input id="lastname" type="text" name="lastname" placeholder="cognome" required>
             </td>
         </tr>
         <tr>
             <td>
-                <label for="address">indirizzo</label>
-                <input id="address" type="text" name="address" placeholder="via tal de tali" required>
+                <label for="address">indirizzo</label></td>
+            <td><input id="address" type="text" name="address" placeholder="via tal de tali" required>
             </td>
         </tr>
         <tr>
             <td>
-                <label for="po">Civico</label>
-                <input id="po" type="number" name="po" placeholder="11">
+                <label for="po">Civico</label></td>
+            <td><input id="po" type="number" name="po" placeholder="11">
             </td>
         </tr>
         <tr>
             <td>
-                <label for="cap">Cap</label>
-                <input id="cap" type="number" name="CAP" placeholder="000000">
+                <label for="cap">Cap</label></td>
+            <td><input id="cap" type="number" name="CAP" placeholder="000000">
             </td>
         </tr>
         <tr>
             <td>
-                <label for="city">Cap</label>
-                <input id="city" type="text" name="Città" placeholder="25030">
+                <label for="city">Cap</label></td>
+            <td><input id="city" type="text" name="Città" placeholder="25030">
             </td>
         </tr>
         <tr>
             <td>
-                <label for="country">Nazione</label>
-                <input id="country" type="text" name="Nazione" placeholder="Italia">
+                <label for="country">Nazione</label></td>
+            <td><input id="country" type="text" name="Nazione" placeholder="Italia">
             </td>
         </tr>
         <tr>
             <td>
-                <label for="province">Provincia</label>
-                <select name="province" id="province">
-                    <option value="MI">Milano</option>
-                    <option value="BG">Bergamo</option>
-                    <option value="VI">Vicenza</option>
-                </select>
+                <label for="province">Provincia</label></td>
+            <td><select name="province" id="province">
+                <option value="MI">Milano</option>
+                <option value="BG">Bergamo</option>
+                <option value="VI">Vicenza</option>
+            </select>
             </td>
         </tr>
         <tr>
             <td>
-                <label for="phone">Telefono</label>
-                <input id="phone" type="text" name="phone" placeholder="0000000000" required>
+                <label for="phone">Telefono</label></td>
+            <td><input id="phone" type="text" name="phone" placeholder="0000000000" required>
             </td>
         </tr>
         <tr>
             <td>
-                <label for="Email">Email</label>
-                <input id="Email" type="text" name="Email" placeholder=".....@.....">
+                <label for="Email">Email</label></td>
+            <td><input id="Email" type="text" name="Email" placeholder=".....@.....">
 
             </td>
         </tr>
         <tr>
             <td>
-                <label for="note">NOTE</label>
-                <textarea name="note" id="note" cols="30" rows="10"></textarea>
+                <label for="note">NOTE</label></td>
+            <td><textarea name="note" id="note" cols="15" rows="4"></textarea>
             </td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
             <br>
             <td><input type="submit" value="invia"></td>
         </tr>
 
     </form>
-</table>
-<button type="reset" form="delivery">Reset</button>
+</table><BR>
+<button  type="reset" form="delivery">Reset</button>
 
 </body>
 </html>
