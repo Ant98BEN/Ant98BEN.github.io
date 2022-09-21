@@ -1,7 +1,19 @@
-h2{
+h1{
    font-size: 30px;
     color: red;
-    word-spacing: 1cm;
-    letter-spacing: 12mm;
+    word-spacing: 0.1cm;
+    letter-spacing: 6mm;
     font-style: oblique;
+}
+
+#a1{
+    font-size: 13px;
+    color: blue;
+    font-family:Inconsolata;
+    text-decoration-style: solid;
+}#a2{
+    font-size: 13px;
+    color: blue;
+    font-family:serif;
+    text-decoration-style: dashed;
 }
