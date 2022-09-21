@@ -256,7 +256,6 @@ PERCORSO RELATIVO: LINK INTERNO, A UN ALTRA PAGINA O A UN LINK NELLA PAGINA COME
 <HR>
 
 
-
 <form id="delivery" autocomplete="on">
     <div style="display:inline">Campo</div>
     <div style="display:inline">Input</div>
@@ -320,10 +319,22 @@ PERCORSO RELATIVO: LINK INTERNO, A UN ALTRA PAGINA O A UN LINK NELLA PAGINA COME
 <HR>
 <FIELDSET>
     <LEGEND>MATERIA PREFERITA</LEGEND>
-    <INPUT ID="STORIA" TYPE="RADIO" NAME="STORIA">
-    <LABEL FOR="STORIA">STORIA</LABEL>
-    <INPUT ID="ALGEBRA" TYPE="RADIO" NAME="ALGEBRA">
-    <LABEL FOR="ALGEBRA">ALGEBRA</LABEL>
+    <DIV>
+        <INPUT ID="STORIA" TYPE="RADIO" NAME="STORIA">
+        <LABEL FOR="STORIA">STORIA</LABEL>
+    </DIV>
+    <DIV>
+        <INPUT ID="ALGEBRA" TYPE="RADIO" NAME="ALGEBRA">
+        <LABEL FOR="ALGEBRA">ALGEBRA</LABEL>
+
+    </DIV>
+
+</FIELDSET>
+<FIELDSET>
+    <LEGEND>QUANTE EMAIL SETTIMANALI VUOI RICEVERE?</LEGEND>
+    <LABEL FOR="email_qty_range"></LABEL>
+    <input type="range" name="email_qty_range" id="email_qty_range" min="1" max="8" value="1" onchange="result.value= parseInt(email_qty_range.value)">
+    <output name="result">1</output>
 </FIELDSET>
 
 <!--<fieldset> è un elemento utilizzato per raggruppare tra di loro diversi elementi
