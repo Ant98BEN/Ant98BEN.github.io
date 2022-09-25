@@ -1,3 +1,12 @@
+body{
+ margin:3px;
+    border: solid blue 3px;
+    border-radius: 10% 10% 10% 10%/15% 15% 15% 15%;
+    border-image: linear-gradient(red-blue) 16;
+    padding: 60px;
+
+}
+
 h1{
    font-size: 30px;
     color: red;
