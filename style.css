@@ -2,7 +2,6 @@ body{
  margin:3px;
     border: solid blue 3px;
     border-radius: 10% 10% 10% 10%/15% 15% 15% 15%;
-    border-image: linear-gradient(red-blue) 16;
     padding: 60px;
 
 }
@@ -18,9 +17,10 @@ h1{
 #a1{
     font-size: 13px;
     color: blue;
-    font-family:Inconsolata;
+    font-family: sans-serif;
     text-decoration-style: solid;
-}#a2{
+}
+.preamble{
     font-size: 13px;
     color: blue;
     font-family:serif;
