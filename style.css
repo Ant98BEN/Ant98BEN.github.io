@@ -1,28 +1,31 @@
-body{
- margin:3px;
-    border: solid blue 3px;
-    border-radius: 10% 10% 10% 10%/15% 15% 15% 15%;
-    padding: 60px;
+body {
+    background-image: url(view-on-calm-lake-1407257.jpg);
+    background-attachment: fixed;
+}
+
+div.page-wrapper {
+    background: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 150px;
+    margin: 180px;
 
 }
 
-h1{
-   font-size: 30px;
-    color: red;
-    word-spacing: 0.1cm;
-    letter-spacing: 6mm;
-    font-style: oblique;
+h1, h2, h3, h4, h5, h6 {
+    font-size: 25px;
+    color: black;
+    padding: 25px
+    margin: 0 auto;
 }
 
-#a1{
-    font-size: 13px;
+p::first-letter {
+    font-size: 30px;
+    color: black;
+}
+
+div {
     color: blue;
-    font-family: sans-serif;
-    text-decoration-style: solid;
-}
-.preamble{
-    font-size: 13px;
-    color: blue;
-    font-family:serif;
-    text-decoration-style: dashed;
 }

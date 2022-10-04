@@ -1,0 +1,119 @@
+/* regole fondamentali */
+
+:root{
+    box-sizing:border-box;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+body *+*{
+    margin-top: 1.5em;
+}
+/* per far sì che si erediti il border box */
+
+
+
+/* regole generiche */
+body{
+    background: #bbb;
+    font-family: arial, sans-serif;
+}
+
+header{
+    margin-bottom: 1.5em;
+}
+
+main{
+    background: #fff;
+    padding: 0 1.5em 1.5em 1.5em;
+}
+
+
+header, footer{
+    background-color: #0072b0;
+    padding: 1.5em;
+    color: #fff;
+}
+
+
+header, footer, main, article{
+    border-radius:5px;
+}
+
+article{
+    background-color: #dedede;
+    padding:1.5em;
+}
+
+article h4{
+    margin:0;
+}
+
+/* impostiamo il container (grandezza e posizione centrale)
+e il float degli articoli _____ sistemiamo il layout______ double container*/
+
+.container{
+    max-width: 1080px;
+    margin:0 auto
+}
+
+article{
+    float: left;
+    width: calc(50% - 1.5em);
+}
+
+/* correggiamo l'impaginazione usando pseudo element e clear IMPORTANTE PER FERMARE FLOAT*/
+
+section::after{
+    display:block;
+    content:" ";
+    clear:both;
+}
+/* il gufo non applica il top margin al 1 figlio*/
+
+main section div article:first-child{
+    margin-top: 1.5em;
+}
+
+/* l'elemento a sx, odd (dispari) oppure (2n+1) prende i margini dx
+successivamente sistemare nel float 50% - 1.5em */
+
+main section div article:nth-child(2n+1){
+    margin-right:1.5em;
+}
+/* section margin collapsing problem */
+
+section > h2{
+    margin-top: 1.5em;
+    color:black;
+}
+
+section::before{
+    display: table;
+    content:"";
+
+}
+
+/* per evitare ingombri diversi tra le righe la seguente funzione crea dei blocchi per ogni riga */
+section div article:nth-child(2n+1){
+    clear:left;
+}
+
+/* internal article img sx e testo destra*/
+
+section div article img{
+    float:left;
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+/* block formatting content P testo vicino immagine con scroll o semplice block se scroll inserire height e 100px*/
+
+section div article p{
+    overflow-y:auto;
+    text-align: justify;
+
+
+
+}
