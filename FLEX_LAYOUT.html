@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Layout</title>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Ink</h1>
+    </header>
+    <nav>
+        <ul class="site-nav">
+            <li><a href="#" class="href">Home</a></li>
+            <li><a href="#" class="href">Feature</a></li>
+            <li><a href="#" class="href">Pricing</a></li>
+            <li><a href="#" class="href">Support</a></li>
+            <li class="nav-right"><a href="#" class="href">About</a></li>
+        </ul>
+    </nav>
+    <main class="flex">
+        <div class="column-main tile">
+            <h1>some title</h1>
+            <p>Some text</p>
+        </div>
+        <div class="column-sidebar">
+            <div class="tile">
+                <form class="login-form">
+                    <h3>LOGIN</h3>
+                    <div>
+                        <input type="text" name="username" id="username">
+                        <label for="username">Username</label>
+                    </div>
+                    <div>
+                        <input type="text" name="password" id="password">
+                        <label for="password">Password</label>
+                    </div>
+
+
+                </form>
+            </div>
+            <div class="tile centered">
+                <small>Starting at</small>
+                <div class="cost">
+                    <span class="cost-currency">$</span>
+                    <span class="cost-dollars">20</span>
+                    <span class="cost-cent">20</span>
+                </div>
+            </div>
+            <a href="#" class="cta-button">Sign up</a>
+        </div>
+    </main>
+</div>
+
+
+</body>
+</html>
