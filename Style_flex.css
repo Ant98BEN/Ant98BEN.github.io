@@ -1,0 +1,154 @@
+/* dare il border a tutti gli elementi */
+:root {
+    box-sizing: border-box;
+}
+
+/* tutti gli elementi ereditano il border-box */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+/* tutti gli elementi DENTRO body */
+body * + * {
+    margin-top: 1.5em;
+}
+
+/* regole x background e caratteri */
+body {
+    background-color: #709b90;
+    font-family: Calibri, sans-serif;
+}
+
+/* double container */
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    background-color: #709b90;
+}
+/* ________ Fine INITIAL SETTINGS ________ */
+
+/* NAV SECTION*/
+
+ul.site-nav{
+    display: flex;
+    padding: .5em;
+    list-style-type: none;/* eliminare punto della lista*/
+    background-color: #a16658;
+    border-radius: .2em;
+}
+ul.site-nav>li{
+    margin-top:0;/* si posizionano alla stessa altezza stesso livello*/
+}
+ul.site-nav>li>a{
+    display: block;
+    padding: .5em 1em;
+    background-color: #cc6b5a;
+    color:white;
+    text-decoration: none;
+}
+ul.site-nav>li>a:hover{
+    background-color: #b22d95;/* cambia quando puntatore sopra*/
+}
+/* si dispongono in laterale perché flex, e si allargano man mano di uno*/
+
+ul.site-nav>li+li{
+    margin-left: .5em;
+}
+
+/* per posizionare tutto a destra con il margine grazie a flex,espande il margine
+per coprire tutto sinistra fino a spostarlo a destra*/
+
+ul.site-nav>.nav-right{
+    margin-left: auto;
+}
+
+/* ___ MAIN ___ primo flex container altri flex item*/
+
+main{
+    display: flex;
+}
+main> *+*{
+    margin-top: 0;
+    margin-left: 1.5em;
+}
+/* ho annullato il lobo owl per togliere il margin top e staccare i 3 elementi con
+margin left*/
+
+
+.tile{
+    background-color: white;
+    padding: 1.5em;
+
+}
+.tile:first-child{
+    margin-top:0;
+}
+.column-main{
+    flex: 3;
+}
+.column-sidebar{
+    flex: 1;
+}
+.column-sidebar{
+    display: flex;
+    flex-direction: column;/* disporle in verticale consente di influenzare
+    la grandezza in verticale*/
+}
+.column-sidebar>.tile{
+    flex:1;
+}
+/* ___ SIDEBAR ___ */
+.login-form h3{
+    margin: 0;
+    font-size: .9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.login-form label{
+    text-align: left;
+    display: block;
+    font-weight: bold;
+}
+.login-form input[type="text"],.login-form input[type="password"]{
+    display: block;
+    margin-top: 0;
+    width: calc(100% - 1.5em);
+    border:  solid 1px;
+    padding: .5em 1em;
+
+}
+
+.centered
+{text-align: center}
+
+.cost{
+    display: flex;
+    align-items: center;
+    justify-content: center;/* ___centrarli sulle x ___ */
+    /* ___centrarli sulle y ___ */
+    line-height: .7em;
+}
+
+.cost>span{
+    margin-top: 0;
+}
+.cost-currency{
+    font-size: 2em;
+}
+.cost-dollars{
+    font-size: 4em;
+}
+.cost-cent{
+    font-size: 1.5em;
+    align-self: flex-start;
+}
+
+
+
+
+
+
