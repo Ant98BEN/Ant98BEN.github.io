@@ -116,7 +116,7 @@ margin left*/
 .login-form input[type="text"],.login-form input[type="password"]{
     display: block;
     margin-top: 0;
-    width: calc(100% - 1.5em);
+    width: 100%;
     border:  solid 1px;
     padding: .5em 1em;
 
@@ -126,13 +126,19 @@ margin left*/
 {text-align: center}
 
 .cost{
+    flex-direction: row;
     display: flex;
     align-items: center;
     justify-content: center;/* ___centrarli sulle x ___ */
     /* ___centrarli sulle y ___ */
     line-height: .7em;
-}
 
+}
+.small{
+    display: block;
+   margin-top: auto;
+   justify-self: start;
+}
 .cost>span{
     margin-top: 0;
 }
@@ -145,6 +151,20 @@ margin left*/
 .cost-cent{
     font-size: 1.5em;
     align-self: flex-start;
+}
+a.cta-button{
+    display: block;
+    background-color: #ffd260;
+    border: solid black 1px;
+    font-size: larger;
+    justify-content: center;
+
+}
+a.login_button{
+    font-size: x-large;
+    border: black 1px solid;
+    padding: .3em 0.7em;
+
 }
 
 
