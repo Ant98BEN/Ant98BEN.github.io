@@ -57,7 +57,7 @@ figure{
 figure:hover{
     background-color: red;
     cursor: pointer;
-    transition-duration:1.5em ;
+    transition-duration: 1.5s;
 }
 
 
