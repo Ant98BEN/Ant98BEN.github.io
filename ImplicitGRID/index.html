@@ -36,7 +36,7 @@
 
         figure figcaption {
             margin: 0;
-            padding .3em .8em;
+            padding: .3em .8em;
             text-align: right;
             background-color: rgba(0, 0, 0, 0.5);
             COLOR: WHITE;
@@ -65,11 +65,8 @@ figure{
 }
 figure img{
     flex: 1;
-    object-fit: cover;/*immagine occupa tutto lo spazio disponibile*/
+    object-fit: cover;/*immagine occupa tutto lo spazio disponibile tramite flex e cover*/
 }
-
-
-
 
 
     </style>
@@ -100,7 +97,7 @@ figure img{
         <img src="assets/AdobeStock_476155062_Preview.jpeg" alt="6">
         <figcaption>Image 6</figcaption>
     </figure>
-    <figure>
+    <figure class="featured">
         <img src="assets/AdobeStock_476477617_Preview.jpeg" alt="7">
         <figcaption>Image 7</figcaption>
     </figure>
