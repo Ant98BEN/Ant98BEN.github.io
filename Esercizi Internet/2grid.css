@@ -1,0 +1,17 @@
+:root,body{
+    height: 100%;
+    margin: 0;
+}
+header, footer{
+    background-color: lightgreen;
+}
+
+main{
+    background-color: lightcoral;
+}
+
+body{
+    display: grid;
+    /*grid-template-rows: 2fr 6fr 2fr; */ /*funziona benissimo come alternativa */
+    grid-template-rows: auto 1fr auto; /* PIU RESPONSIVO SUL CAMBIAMENTO MEDIAsi prende un unità principale e le altre vanno in automatico*/
+}

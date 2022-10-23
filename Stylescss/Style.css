@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* variabili */
+/* nested selector &____ se metto body ha più valore la rule, ha una classe in più */
+#zen-intro a {
+  color: green;
+  margin: 2em;
+  transition: all 1s ease;
+}
+#zen-intro:active {
+  color: #0f480f;
+  transition: inherit;
+}
+#zen-intro:hover {
+  color: #7cf17c;
+  transition: inherit;
+}
+
+/* creo pattern copia e incolla*/
+/* IMPORTANTE
+Extend simile a mixin ma modifica e estende il codice, impatto diverso, da preferire mixin _
+ posso copiare e incollare un altro pattern mettendo @extend e selezionando il selettore usato*/
+
+/*# sourceMappingURL=Style.css.map */

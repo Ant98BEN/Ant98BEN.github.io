@@ -1,0 +1,35 @@
+:root,body{
+    height: 100%;
+    margin: 0;
+}
+header, footer{
+    background-color: lightgreen;
+}
+
+main{
+    background-color: lightcoral;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/* dobbiamo occupare lo spazio disponibile ingrandendo l'item
+flex basis segue il flow orizzontale o verticale della pagina, da usare anziché height e width
+senza impostare un altezza flex grow equivale a 1 unità che occupa tutto ciò che ha a disposizione*/
+header{
+    flex-basis: 5rem;
+}
+
+
+main{
+    flex-grow: 1;
+}
+/*section{*/
+/*    background-color: #709b90;*/
+/*    flex-grow: 2;*/
+/*}*/
+
+
+

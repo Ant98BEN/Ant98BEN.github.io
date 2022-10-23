@@ -1,0 +1,45 @@
+/* variabili */
+@import "Variables";
+@import "Zen_intro";
+
+/* creo pattern copia e incolla*/
+@mixin clearfix {
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  section {
+    background-color: red;
+    @include clearfix
+  }
+
+
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $brand-color;
+  }
+
+  @for $index from 1 to 8{
+.nav-links{
+  >li:nth-child(#{$index}){
+    padding:$spacing * $index;
+  }
+}
+  }
+
+}
+
+/* IMPORTANTE
+Extend simile a mixin ma modifica e estende il codice, impatto diverso, da preferire mixin _
+ posso copiare e incollare un altro pattern mettendo @extend e selezionando il selettore usato*/
+
+
+
+
+
+
+
+

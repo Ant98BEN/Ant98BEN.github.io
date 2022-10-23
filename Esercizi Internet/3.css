@@ -1,0 +1,30 @@
+:root,body{
+    height:100%;
+    margin: 0;
+}
+body > section {
+    background-color: lightgray;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:1rem;
+    padding: 2rem;
+    /* per dare del responsive e non fare overflow uso auto-fit nel repeat e con i valori minmax è minimo 250px fino a tutto lo spazio a disposizione*/
+
+}
+article{
+    background-color: white;
+    border: 10px;
+    overflow: hidden;
+}
+ article header{
+     height: 250px;
+     overflow: hidden; /* per nascondere l'immagine che fuoriesce dal header essendo 500px*/
+ }
+
+ article header img{
+     object-fit: cover;
+     min-height: 200px;
+     max-width: 100%;
+
+ }/* per sistemare l'immagine e fixarla coprente max*/

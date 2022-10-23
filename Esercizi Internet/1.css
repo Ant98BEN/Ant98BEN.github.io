@@ -1,0 +1,15 @@
+html,body{
+    height: 100%;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    background-color: lightcoral;
+    padding: 20px;
+ }
+
+/* allineare verticalmente e orizzontalmente un DIV zenza scroll pagina*/

@@ -1,0 +1,66 @@
+:root, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+"header"
+"sidebar"
+"content"
+"footer";
+    grid-template-rows: 50px auto 1fr auto;
+}
+/* IMPORTANTE - ASSEGNARE LE AREE ALLE CLASSI HTML COME SOTTO RIPORTATO */
+header, footer {
+    background-color: lightgreen;
+}
+
+aside {
+    background-color: lightsalmon;
+    grid-area: sidebar;
+}
+
+main {
+    background-color: lightcoral;
+    grid-area: content;
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+@media (min-width: 768px) {
+    body {
+        grid-template-areas:
+"header header"
+"sidebar content"
+"footer footer";
+        /* header occupa due colonne e la seconda rows dopo tot pixels diventa main piu sidebar, terza footer occupa
+               2 colonne. */
+        grid-template-rows: 50px 1fr auto;
+        grid-template-columns: 1fr 2fr;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

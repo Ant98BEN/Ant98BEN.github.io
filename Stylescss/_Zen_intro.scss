@@ -1,0 +1,19 @@
+
+/* nested selector &____ se metto body ha più valore la rule, ha una classe in più */
+#zen-intro{
+  a{
+    color: $brand-color;
+    margin: $spacing + .5em;
+    transition: all 1s ease;
+  }
+
+  &:active{
+    color:$brand-dark-color ;
+    transition: inherit;
+  }
+  &:hover{
+    color:$brand-light-color ;
+    transition: inherit;
+  }
+}
+

@@ -58,6 +58,7 @@ figure:hover{
     background-color: red;
     cursor: pointer;
     transition-duration: 1.5s;
+    transition-timing-function: ease-in;
 }
 
 
