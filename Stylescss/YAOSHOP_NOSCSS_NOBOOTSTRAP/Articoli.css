@@ -1,0 +1,171 @@
+.main{
+    position: relative;
+    padding-bottom: 1em;
+}
+.__Articoli{
+    margin-bottom: 3em;
+}
+
+.__Articoli::before {
+    position: absolute;
+    background: url(negozio.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    content: "";
+    opacity: 0.12432;
+}
+
+.__Articoli > h1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+}
+
+.perlacasa > h2 {
+    position: relative;
+    display: flex;
+    font-size: 2em;
+    padding-left: 1.3em;
+}
+
+.perlacasa {
+
+    padding-bottom: 6em;
+}
+
+.content > #casa {
+    position: relative;
+    float: left;
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    overflow: hidden;
+    border: 1px cadetblue solid;
+    margin-left: 0.9em;
+}
+
+.pcasa {
+    position: relative;
+    display: flex;
+    font-family: Calibri, sans-serif;
+    padding-top: 0.1em;
+    font-size: 1.3em;
+    padding-left: 2.6em;
+    padding-top: 1.2em;
+    text-align: center;
+}
+
+.Bricolage > h2 {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 2em;
+    padding-right: 1.3em;
+}
+
+
+.content2 > #bricolage1 {
+    position: relative;
+    float: right;
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    overflow: hidden;
+    border: 1px cadetblue solid;
+    margin-left: 0.9em;
+}
+
+.pbricolage {
+    position: relative;
+    display: flex;
+    font-family: Calibri, sans-serif;
+    padding-top: 0.1em;
+    font-size: 1.3em;
+    padding-left: .9em;
+    padding-right: 2.6em;
+    padding-top: 1.2em;
+    text-align: center;
+}
+
+.Bricolage {
+    padding-bottom: 6em;
+}
+
+
+.informatica > h2 {
+    position: relative;
+    display: flex;
+    font-size: 2em;
+    padding-left: 1.3em;
+}
+
+.informatica {
+    padding-bottom: 6em;
+}
+
+.content3 > #informatica3 {
+    position: relative;
+    float: left;
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    overflow: hidden;
+    border: 1px cadetblue solid;
+    margin-left: 0.9em;
+}
+
+.pinformatica {
+    position: relative;
+    display: flex;
+    font-family: Calibri, sans-serif;
+    padding-top: 0.1em;
+    font-size: 1.3em;
+    padding-left: 2.6em;
+    padding-top: 1.2em;
+    text-align: center;
+}
+
+
+.autoaccessori > h2 {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 2em;
+    padding-right: 1.3em;
+}
+
+
+.content4 > #autoaccessori4 {
+    position: relative;
+    float: right;
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    overflow: hidden;
+    border: 1px cadetblue solid;
+    margin-left: 0.9em;
+}
+
+.pautoaccessori {
+    position: relative;
+    display: flex;
+    font-family: Calibri, sans-serif;
+    padding-top: 0.1em;
+    font-size: 1.3em;
+    padding-left: .9em;
+    padding-right: 2.6em;
+    padding-top: 1.2em;
+    text-align: center;
+}
+
+.autoaccessori {
+    padding-bottom: 3em;
+}
+

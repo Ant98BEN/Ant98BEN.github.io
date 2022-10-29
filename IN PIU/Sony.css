@@ -1,0 +1,31 @@
+:root{
+    box-sizing: border-box;
+}
+*,
+:after,
+:before{
+    box-sizing: inherit;
+}
+header {
+    background-color: #709b90;
+}
+.container{
+    margin: 0;
+}
+
+img {
+    width: 290px;
+}
+
+.sitenav{
+    display: flex;
+}
+ul{
+    margin-left: auto;
+    display: flex;
+align-items: center;
+    list-style: none;
+}
+li{
+
+}

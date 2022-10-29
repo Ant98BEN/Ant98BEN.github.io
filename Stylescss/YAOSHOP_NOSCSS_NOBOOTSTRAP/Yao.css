@@ -1,0 +1,10 @@
+@import url(Normalize.css);
+@import url(Topbar.css);
+@import url(AboutUS.css);
+@import url(Articoli.css);
+@import url(Footer.css);
+
+.main{
+    padding-left: 15px;
+    padding-right: 15px;
+}

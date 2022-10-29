@@ -1,0 +1,24 @@
+.__aboutus{
+display: flex;
+align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f6fff7;
+    border: 1px solid rgba(28, 52, 155, 0.67);
+    margin: 2em;
+    border-radius: 15px;
+    padding: 1em;
+}
+.__aboutus>p{
+    display: flex;
+    font-family: Calibri, sans-serif;
+    padding-top: 0.1em;
+    font-size: 1.3em;
+    padding-left: 2.6em;
+    padding-top: 1.2em;
+    text-align: center;
+}
+
+.__aboutus>H1{
+    Font-size: 3em
+}
